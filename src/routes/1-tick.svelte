@@ -33,19 +33,19 @@
     let name = "beauty";
     function withoutTick(){ //console창에 기존 화면이 출력된다.
         name = "ugly"
-        const content = document.querySelector('h4');
+        const content = document.querySelector('.title');
         console.log(`without: ${content && content.innerHTML}`);
     }
     function withTick(){ //console창에 업데이트된 화면이 출력된다.
         name = "ugly"
         tick();
-        const content = document.querySelector('h4');
+        const content = document.querySelector('.title');
         console.log(`with: ${content && content.innerHTML}`);
     }
 
 </script>
 
-<h4 style="margin:10px">
+<h4 class = "title" style="margin:10px">
     Hello {name};
 </h4>
 <button on:click={withTick}> with tick() </button>

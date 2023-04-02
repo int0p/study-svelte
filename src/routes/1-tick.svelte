@@ -27,7 +27,7 @@
 </pre>
 
 <h3>RUN!</h3>
-<p>=============================================================</p>
+<p>================</p>
 <script>
     import {tick} from "svelte"
     let name = "beauty";
@@ -51,7 +51,7 @@
 <button on:click={withTick}> with tick() </button>
 <button on:click={withoutTick}> without tick() </button>
 
-<p>=============================================================</p>
+<p>================</p>
 
 <h4> 실행 결과 </h4>
 <img src = "src/lib/images/tick.png" width="600"/>

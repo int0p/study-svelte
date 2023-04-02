@@ -1,5 +1,5 @@
 import { fail } from '@sveltejs/kit';
-import { Game } from './game';
+import { Game } from './game.js';
 
 export const load = ({ cookies }) => {
 	const game = new Game(cookies.get('sverdle'));

@@ -4,7 +4,7 @@
 </svelte:head>
 
 <h2>
-    예제
+    Interpolation, 보간법 예제
 </h2>
 
 <h3>

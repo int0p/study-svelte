@@ -16,11 +16,11 @@
     목표: 내용/속성/표현식 보간
     -. +내용/속성/표현식+
     -. 속성을 보간할땐 속성의 이름을 ""내에 적지 않아도 된다.
-    -. 단방향 바인딩: script내의 변수를 html에 갖고온다.
-    -. 양방향 바인딩: script내의 변수를 html에서 가져오고, html에서 변경된 값을 script변수에 update한다.
+    -. 단방향 바인딩: script내의 변수를 html에 갖고온다. (값을 받아 출력)
+    -. 양방향 바인딩: script내의 변수를 html에 가져온다 + html에서 변경된 값을 script변수에 update한다.
     -. 속성을 보간할 때, 속성 이름과 데이터 이름이 같으면
-        - 양방향 바인딩: 데이터 이름만 적어도 된다.  (ex. bind:value=+value+ => bind:value)
-        - 단방향 바인딩: 속성 이름만 적어도 된다. (ex. value=+value+ => +value+)
+        - 양방향 바인딩: 데이터 이름만 적어도 된다.  (ex. bind:value=+value+ -> bind:value)
+        - 단방향 바인딩: 속성 이름만 적어도 된다. (ex. value=+value+ -> +value+)
     -. 스벨트는 컴파일러이므로, 보간을 통해 표현식을 작성하는것을 권장한다. (event handler에서 자세히.)
         - 코드를 줄일 수 있음.
 
@@ -45,16 +45,77 @@
 <h3>RUN!</h3>
 <p>=========================</p>
 <script>
+    let href = 'https://int0p.netlify.app';
+    let value1 = '양방향 데이터 바인딩 확인(event)';
+    let value2 = '양방향 데이터 바인딩 확인(bind 지시어)';
+    let isUpperCase = false
+
+    let h1 = '<h1>h1 tag입니다<h1>';
+
+    let index = 0;
+
+    let code = `
+<p>1. 속성과 내용의 단방향 연결확인: <a href= {href}> 맨 위로 이동 </a> </p>
+
+<!--    양방향 데이터 바인딩: event -->
+    <input value = {value1}
+           on:input={(e) => {value1 = e.target.value1}}
+        style="width:500px"/>
+    <p>2. 변수 value1에 저장된 값 - {value1}</p>
+
+<!--    양방향 데이터 바인딩: \`bind:\` 지시어 사용 -->
+    <input bind:value = {value2} style="width:500px"/>
+    <p>3. 변수 value2에 저장된 값 - {value2}</p>
+
+<!-- 표현식 -->
+    <p>4. 변수 isUpperCase가 true인 경우 div를 대문자로, false인 경우 소문자로 출력 -> {isUpperCase ? 'DIV' : 'div'}</p>
+
+<!--    html 요소 보간-->
+    <div>5. html tag
+        <div>@html없이 출력하면, 변수 h1의 내용이 그대로 뜬다. <code>{h1}</code> </div>
+        <div>@html와 출력하면, 변수 h1의 내용이 화면에 반영된다.<code>{@html h1}</code> </div>
+    </div>
+
+<!--    debug로 변수 추적-->
+    <p> 6. debug tag</p>
+    {@debug index}
+    <button on:click={()=>{index+=1}}>클릭시 변수 index의 값 증가 -> console로 확인</button>
+    `
 
 </script>
 
 <div style="margin:10px">
+    <p>1. 속성과 내용의 단방향 연결확인: <a href= {href}> 맨 위로 이동 </a> </p>
+
+<!--    양방향 데이터 바인딩: event -->
+    <input value = {value1}
+           on:input={(e) => {value1 = e.target.value1}}
+        style="width:500px"/>
+    <p>2. 변수 value1에 저장된 값 - {value1}</p>
+
+<!--    양방향 데이터 바인딩: `bind:` 지시어 사용 -->
+    <input bind:value = {value2} style="width:500px"/>
+    <p>3. 변수 value2에 저장된 값 - {value2}</p>
+
+<!-- 표현식 -->
+    <p>4. 변수 isUpperCase가 true인 경우 div를 대문자로, false인 경우 소문자로 출력 -> {isUpperCase ? 'DIV' : 'div'}</p>
+
+<!--    html 요소 보간-->
+    <div>5. html tag
+        <div>@html없이 출력하면, 변수 h1의 내용이 그대로 뜬다. <code>{h1}</code> </div>
+        <div>@html와 출력하면, 변수 h1의 내용이 화면에 반영된다.<code>{@html h1}</code> </div>
+    </div>
+
+<!--    debug로 변수 추적-->
+    <p> 6. debug tag</p>
+    {@debug index}
+    <button on:click={()=>{index+=1}}>클릭시 변수 index의 값 증가 -> console로 확인</button>
 
 </div>
 <p>=========================</p>
 
-<h4> 실행 결과 </h4>
-<img src = "src/lib/images/" height="400"/>
+<h4> 전체 코드 </h4>
+<pre>{code}</pre>
 
 <h3>추가로 알면 좋은것</h3>
 <pre>

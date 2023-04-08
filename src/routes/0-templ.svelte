@@ -27,6 +27,7 @@
 <p>=========================</p>
 <script>
 
+    let code = '';
 </script>
 
 <div style="margin:10px">
@@ -34,8 +35,12 @@
 </div>
 <p>=========================</p>
 
+<h4> 전체 코드 </h4>
+<pre>{code}</pre>
+
 <h4> 실행 결과 </h4>
 <img src = "src/lib/images/" height="400"/>
+
 
 <h3>추가로 알면 좋은것</h3>
 <pre>

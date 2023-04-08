@@ -55,4 +55,9 @@
     <a href="#" class="sublink-2">Item 2.2.1</a>
 </nav>
 
+<style>
+    :global(body){
+        margin: 8vw;
+    }
+</style>
 <slot />

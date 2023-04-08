@@ -9,7 +9,9 @@
     <meta name="description" content="인프런 스벨트 trello 클론코딩, 개념 정리" />
 </svelte:head>
 
+<h1>2023.04.08</h1>
+
 <h1>2023.04.01</h1>
-<LifeCycle/>
-<LifeCycle_tick/>
 <Interpolation/>
+<LifeCycle_tick/>
+<LifeCycle/>

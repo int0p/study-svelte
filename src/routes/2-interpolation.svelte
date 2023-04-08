@@ -89,7 +89,7 @@
 
 <!--    양방향 데이터 바인딩: event -->
     <input value = {value1}
-           on:input={(e) => {value1 = e.target.value1}}
+           on:input={(e) => {value1 = e.target.value}}
         style="width:500px"/>
     <p>2. 변수 value1에 저장된 값 - {value1}</p>
 

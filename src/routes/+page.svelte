@@ -2,6 +2,8 @@
     import LifeCycle from "./1-lifecycle.svelte"
     import LifeCycle_tick from "./1-tick.svelte"
     import Interpolation from "./2-interpolation.svelte"
+    import Reactivity from "./3-reactivity.svelte"
+    import Class from "./4-class.svelte"
 </script>
 
 <svelte:head>
@@ -10,7 +12,8 @@
 </svelte:head>
 
 <h1>2023.04.08</h1>
-
+<Class/>
+<Reactivity/>
 <h1>2023.04.01</h1>
 <Interpolation/>
 <LifeCycle_tick/>

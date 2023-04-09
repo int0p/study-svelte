@@ -162,7 +162,7 @@
 </pre>
 
 <pre class="language-svelte">
-    {@html Prism.highlight(code_html, Prism.languages.svelte)}
+    {@html Prism.highlight(code_html, Prism.languages.js)}
 </pre>
 
 <h4> 클래스 바인딩 패턴 정리 </h4>

@@ -183,7 +183,7 @@
 
 <style lang="scss">
     .box{
-      width: 70rem;
+      width: 70wh;
       height: 200px;
       background-color: mediumpurple;
       text-align: center;

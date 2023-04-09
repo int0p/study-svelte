@@ -114,8 +114,8 @@
 </div>
 <p>=========================</p>
 
-<h4> 전체 코드 </h4>
-<pre>{code}</pre>
+<h4> 코드 </h4>
+<pre class="code" data-lang="svelte html"><code>{code}</code></pre>
 
 <h3>추가로 알면 좋은것</h3>
 <pre>

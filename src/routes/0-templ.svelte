@@ -27,7 +27,13 @@
 <p>=========================</p>
 <script>
 
-    let code = '';
+    let code_script = `
+
+    `;
+
+    let code_html = `
+
+    `;
 </script>
 
 <div style="margin:10px">
@@ -35,10 +41,11 @@
 </div>
 <p>=========================</p>
 
-<h4> 전체 코드 </h4>
-<pre>{code}</pre>
+<h4> 코드 </h4>
+<pre class="code" data-lang="svelte script"><code>{code_script}</code></pre>
+<pre class="code" data-lang="svelte html"><code>{code_html}</code></pre>
 
-<h4> (콘솔) 실행 결과 </h4>
+<h4> 콘솔 실행 결과 </h4>
 <img src = "src/lib/images/" height="400"/>
 
 

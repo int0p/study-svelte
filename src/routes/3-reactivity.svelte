@@ -185,7 +185,6 @@
         function assign() {
             count += 1
         }
-    <button on:click={assign}>Assign!</button>
     `;
 </script>
 
@@ -204,10 +203,10 @@
 <p>=========================</p>
 
 <h4> 코드 </h4>
-<pre>{code}</pre>
+<pre class="code" data-lang="svelte script"><code>{code}</code></pre>
 
 <h4> 반응성 구문 패턴 </h4>
-<pre>{code_pattern}</pre>
+<pre class="code" data-lang="svelte script"><code>{code_pattern}</code></pre>
 
 <h3>추가로 알면 좋은것</h3>
 <pre>

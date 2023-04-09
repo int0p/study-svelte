@@ -27,17 +27,17 @@
 <p>=========================</p>
 <script>
     import Prism from 'prismjs';
-    let code_script = `
+    const code_script = `
 
     `;
 
-    let code_html = `
+    const code_html = `
 
     `;
-    let code_css = `
+    const code_css = `
 
     `;
-    let code_svelte = `
+    const code_svelte = `
 
     `;
 </script>

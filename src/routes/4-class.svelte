@@ -1,6 +1,6 @@
 <svelte:head>
     <title> Class </title>
-    <meta name="description" content=" class " />
+    <meta name="description" content=" class, global, keyframe " />
 </svelte:head>
 
 <h2>

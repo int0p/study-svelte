@@ -4,7 +4,7 @@ Error: wrong number of arguments (1 for 3) for `rgb'
 
 50: 
 51: pre {
-52:   font-size: 1.1rem;
+52:   font-size: 1rem;
 53:   font-family: var(--font-mono);
 54:   border-radius: 3px;
 55:   box-shadow: 2px 2px 6px rgb(255 255 255 / 25%);
@@ -68,4 +68,4 @@ app.scss:55
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: wrong number of arguments (1 for 3) for `rgb'\A         on line 55 of app.scss\A \A 50: \A 51: pre {\A 52:   font-size: 1.1rem;\A 53:   font-family: var(--font-mono);\A 54:   border-radius: 3px;\A 55:   box-shadow: 2px 2px 6px rgb(255 255 255 / 25%);\A 56:   padding: 1.2em;\A 57:   overflow-x: auto;\A 58:   color: var(--color-text);\A 59:   background-color: whitesmoke;\A 60: }"; }
+  content: "Error: wrong number of arguments (1 for 3) for `rgb'\A         on line 55 of app.scss\A \A 50: \A 51: pre {\A 52:   font-size: 1rem;\A 53:   font-family: var(--font-mono);\A 54:   border-radius: 3px;\A 55:   box-shadow: 2px 2px 6px rgb(255 255 255 / 25%);\A 56:   padding: 1.2em;\A 57:   overflow-x: auto;\A 58:   color: var(--color-text);\A 59:   background-color: whitesmoke;\A 60: }"; }

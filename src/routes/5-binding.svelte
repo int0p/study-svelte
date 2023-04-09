@@ -30,12 +30,18 @@
 <h3>RUN!</h3>
 <p>=========================</p>
 <script>
-
+    import Prism from 'prismjs';
     let code_script = `
 
     `;
 
     let code_html = `
+
+    `;
+    let code_css = `
+
+    `;
+    let code_svelte = `
 
     `;
 </script>
@@ -46,12 +52,21 @@
 <p>=========================</p>
 
 <h4> 코드 </h4>
-<pre class="code" data-lang="svelte script"><code>{code_script}</code></pre>
-<pre class="code" data-lang="svelte html"><code>{code_html}</code></pre>
+<pre class="language-svelte">
+    {@html Prism.highlight(code_script, Prism.languages.js)}
+</pre>
 
-<h4> 콘솔 실행 결과 </h4>
-<img src = "src/lib/images/" height="400"/>
+<pre class="language-svelte">
+    {@html Prism.highlight(code_svelte, Prism.languages.svelte)}
+</pre>
 
+<pre class="language-svelte">
+    {@html Prism.highlight(code_html, Prism.languages.html)}
+</pre>
+
+<pre class="language-svelte">
+    {@html Prism.highlight(code_css, Prism.languages.css)}
+</pre>
 
 <h3>추가로 알면 좋은것</h3>
 <pre>

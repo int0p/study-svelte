@@ -54,6 +54,7 @@
 
     let index = 0;
 
+    import Prism from 'prismjs';
     let code = `
 <p>1. 속성과 내용의 단방향 연결확인: <a href= {href}> 맨 위로 이동 </a> </p>
 
@@ -115,8 +116,9 @@
 <p>=========================</p>
 
 <h4> 코드 </h4>
-<pre class="code" data-lang="svelte html"><code>{code}</code></pre>
-
+<pre class="language-svelte">
+    {@html Prism.highlight(code, Prism.languages.html)}
+</pre>
 <h3>추가로 알면 좋은것</h3>
 <pre>
     1. xss(cross site scripting) : 웹 취약점의 하나로, 웹사이트 관리자가 아닌 제 3자가 웹에 악성 스크립트를 삽입할 수 있음.

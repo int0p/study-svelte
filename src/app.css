@@ -1,21 +1,21 @@
 /*
 Error: wrong number of arguments (1 for 3) for `rgb'
-        on line 62 of app.scss
+        on line 55 of app.scss
 
-57: 
-58: pre {
-59:   font-size: 16px;
-60:   font-family: var(--font-mono);
-61:   border-radius: 3px;
-62:   box-shadow: 2px 2px 6px rgb(255 255 255 / 25%);
-63:   padding: 1.2em;
-64:   overflow-x: auto;
-65:   color: var(--color-text);
-66:   background-color: whitesmoke;
-67: }
+50: 
+51: pre {
+52:   font-size: 1.1rem;
+53:   font-family: var(--font-mono);
+54:   border-radius: 3px;
+55:   box-shadow: 2px 2px 6px rgb(255 255 255 / 25%);
+56:   padding: 1.2em;
+57:   overflow-x: auto;
+58:   color: var(--color-text);
+59:   background-color: whitesmoke;
+60: }
 
 Backtrace:
-app.scss:62
+app.scss:55
 /Users/gimseung-ye/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/script/tree/funcall.rb:311:in `reformat_argument_error'
 /Users/gimseung-ye/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/script/tree/funcall.rb:158:in `rescue in _perform'
 /Users/gimseung-ye/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/script/tree/funcall.rb:127:in `_perform'
@@ -68,4 +68,4 @@ app.scss:62
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: wrong number of arguments (1 for 3) for `rgb'\A         on line 62 of app.scss\A \A 57: \A 58: pre {\A 59:   font-size: 16px;\A 60:   font-family: var(--font-mono);\A 61:   border-radius: 3px;\A 62:   box-shadow: 2px 2px 6px rgb(255 255 255 / 25%);\A 63:   padding: 1.2em;\A 64:   overflow-x: auto;\A 65:   color: var(--color-text);\A 66:   background-color: whitesmoke;\A 67: }"; }
+  content: "Error: wrong number of arguments (1 for 3) for `rgb'\A         on line 55 of app.scss\A \A 50: \A 51: pre {\A 52:   font-size: 1.1rem;\A 53:   font-family: var(--font-mono);\A 54:   border-radius: 3px;\A 55:   box-shadow: 2px 2px 6px rgb(255 255 255 / 25%);\A 56:   padding: 1.2em;\A 57:   overflow-x: auto;\A 58:   color: var(--color-text);\A 59:   background-color: whitesmoke;\A 60: }"; }

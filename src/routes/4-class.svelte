@@ -1,7 +1,7 @@
+
 <svelte:head>
     <title> Class </title>
     <meta name="description" content=" class, global, keyframe " />
-
 </svelte:head>
 
 <h2>
@@ -41,11 +41,14 @@
 <h3>RUN!</h3>
 <p>=========================</p>
 <script>
+
     let active = false;
     let color = {
         g: 'green',
         t: 'tomato',
     }
+
+    import Prism from 'prismjs';
     let code_script = `
         let active = false;
         let color = {
@@ -68,7 +71,7 @@
     `;
 
     let code_pattern = `
-    <script>
+    [script]
       let active = true
       let valid = false
       let camelCase = true
@@ -81,7 +84,7 @@
       function multiClass() {
         return 'active valid camel-case'
       }
-    < /script>
+    [/script]
 
     <div class={active ? 'active' : ''}>
         3항 연산자 보간
@@ -154,15 +157,23 @@
 <p>=========================</p>
 
 <h4> 코드 </h4>
-<pre class="code" data-lang="svelte script"><code>{code_script}</code></pre>
-<pre class="code" data-lang="svelte html"><code>{code_html}</code></pre>
+<pre class="language-svelte">
+    {@html Prism.highlight(code_script, Prism.languages.js)}
+</pre>
 
+<pre class="language-svelte">
+    {@html Prism.highlight(code_html, Prism.languages.svelte)}
+</pre>
 
 <h4> 클래스 바인딩 패턴 정리 </h4>
-<pre class="code" data-lang="svelte"><code>{code_pattern}</code></pre>
+<pre class="language-svelte">
+    {@html Prism.highlight(code_pattern, Prism.languages.html)}
+</pre>
 
 <h4> 키프레임 사용 예시 </h4>
-<pre class="code" data-lang="svelte style"><code>{code_keyframe}</code></pre>
+<pre class="language-svelte">
+    {@html Prism.highlight(code_keyframe, Prism.languages.css)}
+</pre>
 
 <h3>추가로 알면 좋은것</h3>
 <pre>

@@ -186,6 +186,8 @@
             count += 1
         }
     `;
+    import Prism from 'prismjs';
+
 </script>
 
 <div style="margin:10px">
@@ -203,10 +205,14 @@
 <p>=========================</p>
 
 <h4> 코드 </h4>
-<pre class="code" data-lang="svelte script"><code>{code}</code></pre>
+<pre class="language-svelte">
+    {@html Prism.highlight(code, Prism.languages.js)}
+</pre>
 
 <h4> 반응성 구문 패턴 </h4>
-<pre class="code" data-lang="svelte script"><code>{code_pattern}</code></pre>
+<pre class="language-svelte">
+    {@html Prism.highlight(code_pattern, Prism.languages.js)}
+</pre>
 
 <h3>추가로 알면 좋은것</h3>
 <pre>

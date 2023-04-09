@@ -57,7 +57,7 @@
 
 <style>
     :global(body){
-        margin: 7vw;
+        margin: 6vw;
     }
 </style>
 <slot />

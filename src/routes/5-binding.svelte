@@ -1,6 +1,6 @@
 <svelte:head>
     <title> 요소 바인딩 </title>
-    <meta name="description" content="  " />
+    <meta name="description" content=" binding " />
 </svelte:head>
 
 <h2>
@@ -11,8 +11,12 @@
     개념
 </h3>
 <pre>
-    목표:
-    요약:
+    <h4>this 일반 요소 바인딩</h4>
+    -
+    <h4>입력 요소 바인딩</h4>
+    -
+
+    <h4>편집 가능 요소 바인딩</h4>
 </pre>
 
 <h3>

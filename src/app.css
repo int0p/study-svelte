@@ -1,0 +1,71 @@
+/*
+Error: wrong number of arguments (1 for 3) for `rgb'
+        on line 67 of app.scss
+
+62: pre {
+63:   font-size: 16px;
+64:   font-family: var(--font-mono);
+65:   background-color: rgba(255, 255, 255, 0.45);
+66:   border-radius: 3px;
+67:   box-shadow: 2px 2px 6px rgb(255 255 255 / 25%);
+68:   padding: 1.2em;
+69:   overflow-x: auto;
+70:   color: var(--color-text);
+71: }
+72: 
+
+Backtrace:
+app.scss:67
+/Users/gimseung-ye/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/script/tree/funcall.rb:311:in `reformat_argument_error'
+/Users/gimseung-ye/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/script/tree/funcall.rb:158:in `rescue in _perform'
+/Users/gimseung-ye/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/script/tree/funcall.rb:127:in `_perform'
+/Users/gimseung-ye/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
+/Users/gimseung-ye/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/script/tree/list_literal.rb:75:in `block in _perform'
+/Users/gimseung-ye/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/script/tree/list_literal.rb:75:in `map'
+/Users/gimseung-ye/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/script/tree/list_literal.rb:75:in `_perform'
+/Users/gimseung-ye/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
+/Users/gimseung-ye/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
+/Users/gimseung-ye/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/gimseung-ye/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/gimseung-ye/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+/Users/gimseung-ye/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/Users/gimseung-ye/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+/Users/gimseung-ye/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/gimseung-ye/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
+/Users/gimseung-ye/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `map'
+/Users/gimseung-ye/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
+/Users/gimseung-ye/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/gimseung-ye/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
+/Users/gimseung-ye/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/gimseung-ye/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/gimseung-ye/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+/Users/gimseung-ye/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/Users/gimseung-ye/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+/Users/gimseung-ye/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/gimseung-ye/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/gimseung-ye/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/gimseung-ye/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/gimseung-ye/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/gimseung-ye/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/gimseung-ye/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/gimseung-ye/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/gimseung-ye/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/gimseung-ye/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/gimseung-ye/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/gimseung-ye/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Users/gimseung-ye/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/gimseung-ye/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/gimseung-ye/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Users/gimseung-ye/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Users/gimseung-ye/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:387:in `run'
+/Users/gimseung-ye/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Users/gimseung-ye/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
+/Users/gimseung-ye/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
+/Users/gimseung-ye/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
+/Users/gimseung-ye/.rbenv/versions/2.7.7/bin/sass:23:in `load'
+/Users/gimseung-ye/.rbenv/versions/2.7.7/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: wrong number of arguments (1 for 3) for `rgb'\A         on line 67 of app.scss\A \A 62: pre {\A 63:   font-size: 16px;\A 64:   font-family: var(--font-mono);\A 65:   background-color: rgba(255, 255, 255, 0.45);\A 66:   border-radius: 3px;\A 67:   box-shadow: 2px 2px 6px rgb(255 255 255 / 25%);\A 68:   padding: 1.2em;\A 69:   overflow-x: auto;\A 70:   color: var(--color-text);\A 71: }\A 72: "; }

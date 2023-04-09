@@ -183,8 +183,8 @@
 
 <style lang="scss">
     .box{
-      width: 500px;
-      height: 300px;
+      width: 70rem;
+      height: 200px;
       background-color: mediumpurple;
       text-align: center;
       color: white;

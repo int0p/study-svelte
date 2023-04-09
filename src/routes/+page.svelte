@@ -6,6 +6,8 @@
     import Class from "./4-class.svelte"
     import Binding from "./5-binding.svelte"
     import IfEachKey from "./6-if-each-key.svelte"
+
+    import "prism-svelte"
 </script>
 
 <svelte:head>

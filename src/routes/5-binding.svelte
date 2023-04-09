@@ -57,7 +57,7 @@
 </pre>
 
 <pre class="language-svelte">
-    {@html Prism.highlight(code_svelte, Prism.languages.js)}
+    {@html Prism.highlight(code_svelte, Prism.languages.svelte)}
 </pre>
 
 <pre class="language-svelte">

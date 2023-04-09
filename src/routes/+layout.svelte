@@ -1,6 +1,5 @@
 <script>
   import "../app.scss";
-  import "prism-svelte"
 </script>
 
 <!-- menu drawer  (spectre.css)  -->
